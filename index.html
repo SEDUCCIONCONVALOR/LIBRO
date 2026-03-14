@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Seducción Prohibida 🔥 | Conquista con Valor</title>
+    <!-- Fuente moderna -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(145deg, #1e1e1e 0%, #2a2a2a 100%);
+            color: #e0e0e0;
+            line-height: 1.5;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 1rem;
+        }
+
+        .container {
+            max-width: 1100px;
+            width: 100%;
+            background: #2d2d2d;
+            border-radius: 2rem;
+            box-shadow: 0 25px 50px -10px rgba(0,0,0,0.8), 0 0 0 1px rgba(255,215,0,0.2) inset;
+            overflow: hidden;
+            border: 1px solid #4a4a4a;
+            animation: aparecer 0.8s ease-out;
+        }
+
+        @keyframes aparecer {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /* header con logo - adaptable */
+        .header {
+            padding: 1.5rem 1.5rem 1rem 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 1rem;
+            border-bottom: 1px solid #4b4b4b;
+            background: rgba(40,40,40,0.9);
+        }
+
+        @media (min-width: 768px) {
+            .header {
+                padding: 2rem 2.5rem 1rem 2.5rem;
+                gap: 1.25rem;
+            }
+        }
+
+        .logo-placeholder {
+            font-size: 1.8rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
+            color: #d4d4d4;
+            text-shadow: 2px 2px 0 #3a3a3a, 4px 4px 0 rgba(0,0,0,0.3);
+            background: linear-gradient(135deg, #c0c0c0, #6b6b6b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.1;
+            animation: brilloLogo 3s infinite;
+        }
+
+        @media (min-width: 768px) {
+            .logo-placeholder {
+                font-size: 2.2rem;
+                text-shadow: 3px 3px 0 #3a3a3a, 6px 6px 0 rgba(0,0,0,0.3);
+            }
+        }
+
+        @keyframes brilloLogo {
+            0%, 100% { filter: brightness(1); }
+            50% { filter: brightness(1.3); }
+        }
+
+        .logo-placeholder span {
+            font-size: 1.5rem;
+            -webkit-text-fill-color: #b8860b;
+            display: inline-block;
+            filter: drop-shadow(0 2px 4px black);
+        }
+
+        @media (min-width: 768px) {
+            .logo-placeholder span {
+                font-size: 1.8rem;
+            }
+        }
+
+        .subrayado-valor {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #b0b0b0;
+            letter-spacing: 1px;
+            border-left: 3px solid #b38b40;
+            padding-left: 0.8rem;
+            text-transform: uppercase;
+            animation: parpadeo 2s infinite;
+        }
+
+        @media (min-width: 768px) {
+            .subrayado-valor {
+                font-size: 1rem;
+                letter-spacing: 2px;
+                padding-left: 1rem;
+            }
+        }
+
+        @keyframes parpadeo {
+            0%, 100% { opacity: 0.8; }
+            50% { opacity: 1; }
+        }
+
+        /* SECCIÓN CON LA IMAGEN REAL - RECTANGULAR Y ADAPTABLE */
+        .image-showcase {
+            padding: 1.5rem 1.5rem 1rem 1.5rem;
+            background: #2b2b2b;
+            text-align: center;
+            border-bottom: 1px solid #4c4c4c;
+        }
+
+        @media (min-width: 768px) {
+            .image-showcase {
+                padding: 2rem 2.5rem 1.5rem 2.5rem;
+            }
+        }
+
+        .image-container {
+            max-width: 100%;
+            margin: 0 auto;
+            background: #353535;
+            border-radius: 24px;
+            padding: 1.2rem 1.5rem;
+            border: 2px solid #b38b40;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+            transition: transform 0.2s ease, box-shadow 0.3s ease;
+            animation: flotar 4s infinite ease-in-out;
+        }
+
+        @media (min-width: 768px) {
+            .image-container {
+                max-width: 800px;
+                padding: 1.5rem 2.5rem;
+                border-radius: 32px;
+            }
+        }
+
+        @keyframes flotar {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); box-shadow: 0 20px 30px rgba(0,0,0,0.8); }
+        }
+
+        @media (min-width: 768px) {
+            @keyframes flotar {
+                50% { transform: translateY(-8px); }
+            }
+        }
+
+        .image-container:hover {
+            transform: scale(1.01);
+            border-color: #d6ad60;
+        }
+
+        .image-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #b0b0b0;
+            margin-bottom: 0.6rem;
+        }
+
+        @media (min-width: 768px) {
+            .image-label {
+                font-size: 1rem;
+                letter-spacing: 3px;
+                margin-bottom: 0.8rem;
+            }
+        }
+
+        .logo-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 16px;
+            border: 2px solid #5a5a5a;
+            background: #2b2b2b;
+            box-shadow: 0 0 15px rgba(0,0,0,0.6);
+            transition: transform 0.5s ease;
+            max-height: 180px;
+            object-fit: contain;
+        }
+
+        @media (min-width: 768px) {
+            .logo-image {
+                border-radius: 20px;
+                max-height: 220px;
+            }
+        }
+
+        .logo-image:hover {
+            transform: scale(1.02);
+        }
+
+        .image-caption {
+            margin-top: 0.8rem;
+            color: #b0b0b0;
+            font-size: 0.8rem;
+            border-bottom: 1px dotted #5e5e5e;
+            padding-bottom: 0.4rem;
+        }
+
+        /* contenido principal - TONO INTENSO */
+        .hero {
+            padding: 1.5rem 1.5rem 1rem 1.5rem;
+            background: #2f2f2f;
+            background-image: radial-gradient(circle at 30% 30%, rgba(100,100,100,0.2) 0%, transparent 30%);
+        }
+
+        @media (min-width: 768px) {
+            .hero {
+                padding: 2.5rem 2.5rem 1.5rem 2.5rem;
+            }
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+            color: #ffffff;
+            text-shadow: 0 4px 12px rgba(0,0,0,0.7);
+            max-width: 900px;
+            animation: aparecerTitulo 1s ease-out;
+        }
+
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 2.8rem;
+            }
+        }
+
+        @keyframes aparecerTitulo {
+            0% { opacity: 0; transform: translateX(-20px); }
+            100% { opacity: 1; transform: translateX(0); }
+        }
+
+        .h1-accent {
+            color: #d6ad60;
+            border-bottom: 2px solid #d6ad60;
+            display: inline-block;
+            padding-bottom: 2px;
+            animation: latidoColor 2s infinite;
+        }
+
+        @media (min-width: 768px) {
+            .h1-accent {
+                border-bottom: 3px solid #d6ad60;
+                padding-bottom: 4px;
+            }
+        }
+
+        @keyframes latidoColor {
+            0%, 100% { color: #d6ad60; border-color: #d6ad60; }
+            50% { color: #f5c542; border-color: #f5c542; text-shadow: 0 0 10px #f5c542; }
+        }
+
+        .descripcion-sec {
+            font-size: 1.1rem;
+            color: #c0c0c0;
+            margin: 1rem 0 1.5rem 0;
+            font-weight: 400;
+            border-left: 4px solid #d6ad60;
+            padding-left: 1rem;
+            background: rgba(0,0,0,0.2);
+            border-radius: 0 8px 8px 0;
+            animation: deslizarDerecha 0.8s ease-out;
+        }
+
+        @media (min-width: 768px) {
+            .descripcion-sec {
+                font-size: 1.3rem;
+                margin: 1.2rem 0 1.8rem 0;
+                padding-left: 1.5rem;
+            }
+        }
+
+        @keyframes deslizarDerecha {
+            0% { opacity: 0; transform: translateX(-20px); }
+            100% { opacity: 1; transform: translateX(0); }
+        }
+
+        /* FRASE PERSONAL INTENSA - como un amigo que te sacude */
+        .frase-personal-intensa {
+            background: #252525;
+            padding: 1.2rem 1.5rem;
+            border-radius: 20px;
+            color: #f0f0f0;
+            font-size: 1.1rem;
+            margin: 1.5rem 0;
+            border-left: 6px solid #e63946;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            font-style: normal;
+            line-height: 1.6;
+            border-right: 1px solid #e63946;
+        }
+
+        @media (min-width: 768px) {
+            .frase-personal-intensa {
+                padding: 1.5rem 2rem;
+                font-size: 1.3rem;
+                margin: 2rem 0;
+            }
+        }
+
+        .frase-personal-intensa strong {
+            color: #e63946;
+            font-weight: 800;
+            font-size: 1.2em;
+        }
+
+        .frase-personal-intensa .highlight {
+            color: #f5c542;
+            font-weight: 700;
+        }
+
+        /* BLOQUE DE DECISIÓN - COMPRAR O SEGUIR IGUAL */
+        .decision-block {
+            background: #1f1f1f;
+            padding: 1.5rem;
+            border-radius: 30px;
+            margin: 1.5rem 0;
+            border: 2px solid #e63946;
+            box-shadow: 0 0 25px rgba(230, 57, 70, 0.3);
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            .decision-block {
+                padding: 2rem;
+                margin: 2rem 0;
+            }
+        }
+
+        .decision-title {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #fff;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+        }
+
+        @media (min-width: 768px) {
+            .decision-title {
+                font-size: 2.4rem;
+            }
+        }
+
+        .decision-options {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        @media (min-width: 768px) {
+            .decision-options {
+                flex-direction: row;
+                justify-content: center;
+                gap: 2rem;
+            }
+        }
+
+        .option-bad {
+            background: rgba(0,0,0,0.5);
+            padding: 1rem;
+            border-radius: 20px;
+            border-left: 4px solid #555;
+            flex: 1;
+        }
+
+        .option-good {
+            background: rgba(214, 173, 96, 0.15);
+            padding: 1rem;
+            border-radius: 20px;
+            border-left: 4px solid #f5c542;
+            flex: 1;
+            animation: pulsoOpcion 2s infinite;
+        }
+
+        @keyframes pulsoOpcion {
+            0%, 100% { box-shadow: 0 0 10px rgba(245, 197, 66, 0.3); }
+            50% { box-shadow: 0 0 25px rgba(245, 197, 66, 0.7); }
+        }
+
+        .option-bad h3, .option-good h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .option-bad h3 {
+            color: #aaa;
+        }
+
+        .option-good h3 {
+            color: #f5c542;
+        }
+
+        .option-bad p, .option-good p {
+            font-size: 1rem;
+            color: #ccc;
+        }
+
+        .option-good p {
+            color: #f0f0f0;
+        }
+
+        .bullet-section {
+            background: #333333;
+            padding: 1.5rem 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .bullet-section {
+                padding: 2rem 2.5rem;
+            }
+        }
+
+        .bullet-title {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #ddd;
+            margin-bottom: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 2px solid #595959;
+            padding-bottom: 0.5rem;
+            animation: resaltado 2s infinite;
+        }
+
+        @media (min-width: 768px) {
+            .bullet-title {
+                font-size: 2rem;
+                margin-bottom: 1.8rem;
+                letter-spacing: 1.5px;
+            }
+        }
+
+        @keyframes resaltado {
+            0%, 100% { border-color: #595959; }
+            50% { border-color: #d6ad60; }
+        }
+
+        .bullet-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        @media (min-width: 768px) {
+            .bullet-grid {
+                gap: 1rem;
+            }
+        }
+
+        .bullet-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.8rem;
+            font-size: 1rem;
+            background: #3b3b3b;
+            padding: 0.7rem 1.2rem;
+            border-radius: 40px;
+            border: 1px solid #5e5e5e;
+            box-shadow: 0 3px 0 #1f1f1f;
+            color: #f0f0f0;
+            font-weight: 500;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+            animation: aparecerItems 0.5s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        @media (min-width: 768px) {
+            .bullet-item {
+                gap: 1rem;
+                font-size: 1.2rem;
+                padding: 0.9rem 1.8rem;
+                border-radius: 60px;
+                box-shadow: 0 4px 0 #1f1f1f;
+            }
+        }
+
+        .bullet-item:nth-child(1) { animation-delay: 0.1s; }
+        .bullet-item:nth-child(2) { animation-delay: 0.2s; }
+        .bullet-item:nth-child(3) { animation-delay: 0.3s; }
+        .bullet-item:nth-child(4) { animation-delay: 0.4s; }
+        .bullet-item:nth-child(5) { animation-delay: 0.5s; }
+
+        @keyframes aparecerItems {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .bullet-item:hover {
+            transform: translateY(-2px) scale(1.02);
+            box-shadow: 0 5px 0 #1f1f1f, 0 0 15px rgba(214, 173, 96, 0.3);
+            border-color: #d6ad60;
+        }
+
+        .bullet-item span {
+            color: #d6ad60;
+            font-size: 1.4rem;
+            line-height: 1;
+            margin-right: 6px;
+            transition: transform 0.2s ease;
+        }
+
+        .bullet-item:hover span {
+            transform: rotate(5deg) scale(1.1);
+        }
+
+        /* BLOQUE DE CONFIANZA INTENSO */
+        .trust-block-intenso {
+            background: #1f1f1f;
+            padding: 1.8rem 1.5rem;
+            border-top: 2px solid #e63946;
+            border-bottom: 2px solid #e63946;
+        }
+
+        @media (min-width: 768px) {
+            .trust-block-intenso {
+                padding: 2.5rem 2.5rem;
+            }
+        }
+
+        .trust-message-intenso {
+            font-size: 1.3rem;
+            color: #fff;
+            margin-bottom: 1.2rem;
+            background: rgba(230, 57, 70, 0.15);
+            padding: 1.5rem;
+            border-radius: 24px;
+            border: 1px solid #e63946;
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            .trust-message-intenso {
+                font-size: 1.6rem;
+                padding: 2rem;
+            }
+        }
+
+        .trust-message-intenso strong {
+            color: #e63946;
+            font-size: 1.3em;
+        }
+
+        .trust-message-intenso .gold {
+            color: #f5c542;
+        }
+
+        .cientifico-block {
+            background: #2b2b2b;
+            padding: 1.5rem 1.5rem;
+            border-left: 6px solid #b38b40;
+            margin: 1rem 0;
+            border-radius: 0 20px 20px 0;
+            transition: border-left 0.3s ease;
+        }
+
+        @media (min-width: 768px) {
+            .cientifico-block {
+                padding: 2rem 2.5rem;
+                border-left: 10px solid #b38b40;
+                margin: 1.5rem 0;
+                border-radius: 0 30px 30px 0;
+            }
+        }
+
+        .cientifico-block:hover {
+            border-left-color: #e6c27a;
+        }
+
+        .call-email {
+            background: #3c3c3c;
+            padding: 1.5rem 1.5rem;
+            text-align: center;
+            border-top: 1px solid #6a6a6a;
+            border-bottom: 1px solid #6a6a6a;
+        }
+
+        .email-note {
+            font-size: 1rem;
+            color: #ccc;
+            margin-bottom: 0.8rem;
+        }
+
+        .email-example {
+            background: #222;
+            padding: 0.5rem 1rem;
+            border-radius: 60px;
+            display: inline-block;
+            border: 1px solid #b38b40;
+            font-weight: 600;
+            color: #e0e0e0;
+            letter-spacing: 0.5px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .email-example:hover {
+            transform: scale(1.05);
+            border-color: #e6c27a;
+            box-shadow: 0 0 20px rgba(214, 173, 96, 0.3);
+        }
+
+        /* ===== BOTÓN COMPRAR CON INTENSIDAD ===== */
+        .button-area {
+            padding: 1.8rem 1.5rem 2rem 1.5rem;
+            text-align: center;
+            background: #2d2d2d;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .button-area::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(230, 57, 70, 0.15) 0%, transparent 70%);
+            animation: fondoGiratorio 15s linear infinite;
+        }
+
+        @keyframes fondoGiratorio {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .btn-comprar {
+            display: inline-block;
+            background: linear-gradient(145deg, #e63946, #b0302a);
+            color: white;
+            font-size: 1.8rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            padding: 1rem 2rem;
+            border-radius: 60px;
+            letter-spacing: 2px;
+            border: 2px solid #ff8a8a;
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 0 #6d1a1a, 0 12px 25px rgba(0,0,0,0.5);
+            animation: boton-pulso 1s infinite ease-in-out, botonBrillo 2s infinite;
+            z-index: 1;
+            width: auto;
+            max-width: 90%;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .btn-comprar::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.5s;
+            z-index: -1;
+        }
+
+        .btn-comprar::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -20px;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
+            color: rgba(255,255,255,0.3);
+            animation: destelloLatera 1s infinite;
+        }
+
+        @keyframes destelloLatera {
+            0%, 100% { opacity: 0.3; right: -20px; }
+            50% { opacity: 1; right: -10px; color: rgba(255,255,255,0.9); }
+        }
+
+        .btn-comprar:hover::before {
+            left: 100%;
+        }
+
+        .btn-comprar:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 10px 0 #6d1a1a, 0 15px 30px rgba(0,0,0,0.6), 0 0 40px #e63946;
+            background: linear-gradient(145deg, #ff4d4d, #c0392b);
+            animation: none;
+        }
+
+        .btn-comprar:active {
+            transform: translateY(5px) scale(0.98);
+            box-shadow: 0 3px 0 #6d1a1a, 0 8px 15px rgba(0,0,0,0.6);
+        }
+
+        @keyframes boton-pulso {
+            0% { transform: scale(1); box-shadow: 0 8px 0 #6d1a1a, 0 12px 25px rgba(0,0,0,0.5); }
+            50% { transform: scale(1.03); box-shadow: 0 10px 0 #6d1a1a, 0 15px 30px rgba(0,0,0,0.6), 0 0 30px #e63946; }
+            100% { transform: scale(1); box-shadow: 0 8px 0 #6d1a1a, 0 12px 25px rgba(0,0,0,0.5); }
+        }
+
+        @keyframes botonBrillo {
+            0%, 100% { filter: brightness(1); }
+            50% { filter: brightness(1.3); }
+        }
+
+        /* Mensaje final intenso */
+        .final-message-intenso {
+            background: #1f1f1f;
+            padding: 1.2rem;
+            border-radius: 50px;
+            margin: 1.5rem auto 0;
+            max-width: 600px;
+            font-size: 1.2rem;
+            border: 2px solid #e63946;
+            animation: latidoBorde 1.5s infinite;
+        }
+
+        @keyframes latidoBorde {
+            0%, 100% { border-color: #e63946; box-shadow: 0 0 10px #e63946; }
+            50% { border-color: #ff8a8a; box-shadow: 0 0 25px #ff4d4d; }
+        }
+
+        @media (min-width: 768px) {
+            .final-message-intenso {
+                padding: 1.5rem;
+                font-size: 1.4rem;
+            }
+        }
+
+        .final-message-intenso span {
+            color: #e63946;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        .hotmart-note {
+            font-size: 0.9rem;
+            color: #aaa;
+            margin-top: 1.2rem;
+            position: relative;
+            z-index: 2;
+            animation: aparecer 1s ease-out;
+        }
+
+        .hotmart-note strong {
+            color: #d6ad60;
+            transition: color 0.3s ease;
+        }
+
+        .footer {
+            background: #212121;
+            padding: 1.2rem 1.5rem;
+            text-align: center;
+            color: #777;
+            border-top: 1px solid #4d4d4d;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- header -->
+        <div class="header">
+            <div class="logo-placeholder">
+                SEDUCCIÓN <span>CON VALOR</span>
+            </div>
+            <div class="subrayado-valor">—— DOMINA TU ATRACCIÓN ——</div>
+        </div>
+
+        <!-- imagen real -->
+        <div class="image-showcase">
+            <div class="image-container">
+                <div class="image-label">⚡ LOGO OFICIAL ⚡</div>
+                <img src="Gemini_Generated_Image_fh8r43fh8r43fh8r.png" 
+                     alt="Seducción con Valor - Logo" 
+                     class="logo-image"
+                     onerror="this.onerror=null; this.style.display='none'; this.parentElement.innerHTML+='<div style=\'background:#4f4f4f; padding:2rem; border-radius:24px; color:#ccc;\'>⚠️ Imagen no encontrada. Verifica que el archivo <strong>Gemini_Generated_Image_fh8r43fh8r43fh8r.png</strong> esté en la misma carpeta.</div>'">
+                <div class="image-caption"></div>
+            </div>
+        </div>
+
+        <!-- hero con tono intenso -->
+        <div class="hero">
+            <h1>
+                Descubre los <span class="h1-accent">SECRETOS INFALIBLES</span><br>
+                que te permitirán ACERCARTE, SEDUCIR Y CONQUISTAR A CUALQUIER MUJER<br>
+                y <span class="h1-accent">Dejarlas Profundamente Obsesionadas</span> Contigo
+            </h1>
+            <div class="descripcion-sec">
+                🔥 SEDUCCIÓN PROHIBIDA — el libro que reconfigura tu magnetismo personal
+            </div>
+            
+            <!-- FRASE PERSONAL INTENSA - sacudiendo al lector -->
+            <div class="frase-personal-intensa">
+                <strong>¿Vas a seguir igual?</strong> <span class="highlight">Porque esto no va a cambiar solo.</span> <br><br>
+                La timidez no se va con los años. Las mujeres no llegan solas. <br><br>
+                <strong>Este libro es el punto de quiebre.</strong> O lo compras ahora y empiezas a vivir como siempre quisiste, <strong>o te quedas igual.</strong> <br><br>
+                La decisión es tuya. Pero el tiempo corre.
+            </div>
+        </div>
+
+        <!-- DECISIÓN: COMPRAR O SEGUIR IGUAL -->
+        <div class="decision-block">
+            <div class="decision-title">⚡ DECIDE AHORA ⚡</div>
+            <div class="decision-options">
+                <div class="option-bad">
+                    <h3>❌ SEGUIR IGUAL</h3>
+                    <p>Más años de timidez, oportunidades perdidas, mirando desde afuera mientras otros tienen lo que tú quieres. El mismo ciclo una y otra vez.</p>
+                </div>
+                <div class="option-good">
+                    <h3>✅ COMPRAR EL LIBRO</h3>
+                    <p>Transformación total. Carisma magnético, seguridad absoluta, mujeres atrapadas en tu energía. La vida que mereces empieza hoy.</p>
+                </div>
+            </div>
+            <div style="font-size: 1.3rem; margin-top: 1rem; color: #f5c542; font-weight: 700;">
+                SOLO HAY UNA OPCIÓN INTELIGENTE
+            </div>
+        </div>
+
+        <!-- bullets -->
+        <div class="bullet-section">
+            <div class="bullet-title">⚡ ESTO ES PARA TÍ SI:</div>
+            <div class="bullet-grid">
+                <div class="bullet-item"><span>🟢</span> ¿Deseas desarrollar tu carisma para ser más atractivo sin importar tu apariencia o situación económica?</div>
+                <div class="bullet-item"><span>🟢</span> ¿Te gustaría poseer el poder de atraer y conquistar a mujeres atractivas sin experimentar rechazo?</div>
+                <div class="bullet-item"><span>🟢</span> ¿Deseas descubrir cómo cautivar a cualquier mujer, despertando su amor y atrayéndola hacia ti?</div>
+                <div class="bullet-item"><span>🟢</span> ¿Te gustaría tener +150 Consejos para convertirte en tu mejor versión?</div>
+                <div class="bullet-item"><span>🟢</span> ¿Deseas liberarte de la timidez de una vez por todas y convertirte en una persona carismática y de alto valor?</div>
+            </div>
+        </div>
+
+        <!-- BLOQUE DE CONFIANZA INTENSO (todo se soluciona aquí) -->
+        <div class="trust-block-intenso">
+            <div class="trust-message-intenso">
+                💬 <strong>"Ya probé de todo"</strong> — lo sé. Y por eso mismo <span class="gold">esto es diferente.</span> <br><br>
+                <strong>Todo se soluciona con este libro.</strong> La ansiedad, el miedo, las dudas, la inseguridad. Todo. <br><br>
+                Solo tienes que <strong>comprarlo y leerlo.</strong> Luego, verás.
+            </div>
+        </div>
+
+        <!-- científico con toque personal -->
+        <div class="cientifico-block">
+            <p style="font-size:1.2rem; font-weight:600; color:#e0e0e0;">Déjame decirte esto:</p>
+            <p style="font-size:1rem; margin:0.5rem 0 1rem 0;">Si crees que es por tu cara o por tu bolsillo…</p>
+            <p style="font-size:1.1rem; background:#1f1f1f; padding:1rem; border-radius:20px; border:1px solid #b38b40;">
+                → <strong>La ciencia ya comprobó</strong> que las mujeres responden a señales inconscientes, no a la billetera. 
+                Y eso, justamente, es lo que este libro te enseña a proyectar.
+            </p>
+        </div>
+
+        <!-- email (se mantiene) -->
+        <div class="call-email">
+            <div class="email-note">📬 Para asegurar la entrega por favor coloca tu <strong>correo electrónico principal</strong>, Ejemplo: Gmail, Outlook.</div>
+            <div class="email-example">✉️  tucorreo@ejemplo.com  (Gmail, Outlook)</div>
+            <p style="margin-top:1.2rem; color:#b0b0b0;">Coloca tus datos correctamente e ingresa a tu <strong style="color:#d6ad60;">Área de Miembros</strong> y <u>DESCARGA TODOS los libros del programa de seducción</u>.</p>
+        </div>
+
+        <!-- BOTÓN COMPRAR con llamado intenso -->
+        <div class="button-area">
+            <a href="https://pay.hotmart.com/Q85627397J?off=y23yjh5y&checkoutMode=10&ref=B104157340E&bid=1773507646890" class="btn-comprar">🔥 COMPRAR AHORA 🔥</a>
+            <div class="hotmart-note">
+                <span>⏰ Accede hoy a <strong>SEDUCCIÓN PROHIBIDA</strong> en <strong>Hotmart</strong>. Pago único y seguro.</span><br>
+                <span style="font-size:0.8rem;">(libro digital + acceso inmediato al área de miembros)</span>
+            </div>
+            
+            <!-- Mensaje final intenso -->
+            <div class="final-message-intenso">
+                ⚡ <span>COMPRA O SIGUE IGUAL</span> ⚡ <br>
+                No hay término medio. Decide ahora.
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer">
+            <p>© 2025 Seducción Prohibida · Todos los derechos reservados · Este sitio no es parte de Facebook™ ni Meta™</p>
+            <p style="margin-top:0.5rem;">🛡️ Política de privacidad · Términos y condiciones · contacto@seduccionconvalor.com</p>
+        </div>
+    </div>
+</body>
+</html>
